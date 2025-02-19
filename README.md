@@ -39,5 +39,9 @@ Data modeling can be seen from following Notebook
 
 [Predicting_Cannula_Distorted_Defect_Based_On_Hardness](Predicting_Cannula_Distorted_Defect_Based_On_Hardness.ipynb)
 
+## Model Deployment
+Model deployment can be done by using Python Notebook and using Streamlit to deploy it locally into your PC.
+[Model Deployment](Model_deployment.ipynb)
+
 
 
