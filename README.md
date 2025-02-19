@@ -17,3 +17,27 @@ X - Input Feature (Hardness reading at Drawing, Bright Annealing, Sinking and El
 ![Process Flow](processflow.png)
 Above shows the process flow of Cannula Production. There are 4 process where the hardness measurement of the cannula have been taken that are in the red rectangle. With this project we can detect the defect earlier than current detection point thus can reduce the amount of wastage and reduce cost of reprocessing.
 
+## Dataset Limitation
+- Our dataset is only limited to 100 data. The limitation for data collection is highly contributed by time taken to conduct measurement at each process (relevant input features). A complete measurement of each Production Order which having 4 input features took 1 to 1.5 hours.
+- The challenge includes getting a perfect diamond-shaped onto a 0.55 mm cannula in order to get accurate reading of the hardness value. This can lead to multiple times of adjustments and inadvertently increase the time taken to perform the measurement.
+- Being a pilot study, there was no prior data available for hardness measurement value.
+
+## Data Analysis
+![Target Distribution](target_distribution.png)
+
+Analysis of target column shows our dataset is perfectly balance with 50 count of defect and 50 count of non defect.
+
+
+![Scatter Plot](scatter_plot.png)
+
+Scatter plot of hardness measurement value of for 4 features are plot to the target values which is Distorted or Not to find some insight.
+
+- We can observe that the plot are equally distributed along the line in Drawing process. However, In Bright Annealing process, we can observe that there are significant difference in distribution of the plots between 1-Distorted and 0-Not Distorted data. While on Sinking and Defect and also Electro Fission and Defect scatter plot the 1 and 0 and overlapping each other.
+
+## Data Modeling
+Data modeling can be seen from following Notebook 
+
+[Predicting_Cannula_Distorted_Defect_Based_On_Hardness](Predicting_Cannula_Distorted_Defect_Based_On_Hardness.ipynb)
+
+
+
